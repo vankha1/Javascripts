@@ -1,0 +1,65 @@
+- Automatic Type Conversions : https://www.programiz.com/javascript/type-conversion
+
+- Nên loại bỏ "type="text/javascript".
+
+- Math.random() range from 0 to 1 not include 1.
+
+- Truyền không đủ tham số cho 1 hàm thì tham số không được truyền sẽ bằng undefined
+  Truyền dư tham số thì vẫn excute bình thường, chương trình sẽ ignore những
+extra parameters.
+
+- A function without a return statement returns undefined.
+
+- If you reload the same page, all your global variables are destroyed 
+and then recreated in the newly loaded page.
+
+- Inside a function, nếu mà không từ khóa var để khai báo biến mà chỉ gán giá trị cho
+biến đó thì biến đó trở thành global, not local.
+
+- Nếu biến global và biến local có the same name thì chúng không có ảnh hưởng gì với
+nhau, nếu 1 trong 2 biến changes thì biến còn lại không bị ảnh hưởng.
+
+- Từ khóa this không dùng ở bên ngoài object. 
+
+- When you load a page into the browser, not only browser parse HTML và render it to the display, it also create a set of objects that represent your markup.
+These objects are stored in the DOM. 
+
+- An element object is the browser’s internal representation of what you type into your HTML file, like <p>some text</p>. When the browser loads and parses your HTML file, it creates an element object for every element in your page, and adds all those element objects to the DOM.  Just like other objects, element objects can have properties, like innerHTML, and methods, too.
+
+- A callback works like this: give a function to the object that knows about the event. When the event occurs, that object will call you back, or notify you, by calling that function.
+
+- GetElementById can return null if id doesn't exist
+
+- Null is intended to represent an object that isn't there.
+
+- JavaScript uses the value NaN, more commonly known as “Not a Number”, to represent numeric results that, well, can’t be represented. If you compare 
+NaN to NaN, they aren’t equal!
+
+- Check NaN using function isNaN
+
+- If you’re comparing a string and a number the same thing happens every time: the string is converted into a number, and the two numbers are then compared.This doesn’t always go well, because not all strings can be converted to numbers. For example, 99 == "kha" --> 99 == NaN --> false
+
+- Boolean compare to any other types --> boolean convert 1 or 0
+
+- null == undefined --> return true
+
+- "true" == true --> false because true is converted to 1 and compared to "true"
+
+- If you try to add a number and a string, JavaScript converts the number to a string and concatenates the two. 
+We obviously see : var order = 1 + 2 + " pizzas";  --> 3 pizzas
+                    var order = 1 + (2 + " pizzas");  --> 12 pizzas
+
+- When it comes the other arithmetic operators—like multiplication, division and subtraction — JavaScript prefers to treat those as arithmetic operations, not string operations. Ex : var multi = 3 * "4" --> result is 12
+
+- Remember, variables hold references to objects, and so whenever we compare two objects, we’re comparing object references.
+
+- Two objects are equal only if the variables containing the object references point to the same object.
+
+
+- 6 falsey value in js : undefined, null, "", 0, false, NaN
+
+- Enhanced object literals : 
+    + Used to define key and value in object when key and value have the same name
+    + Used to define method for object 
+    + Used to define key for object following variables ([nameOfKey] : value)
+
