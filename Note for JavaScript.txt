@@ -63,3 +63,18 @@ We obviously see : var order = 1 + 2 + " pizzas";  --> 3 pizzas
     + Used to define method for object 
     + Used to define key for object following variables ([nameOfKey] : value)
 
+- Object reference : 
+Object Reference là một khái niệm thể hiện một biến tham chiếu, tức là thay vì lưu trữ giá trị thực nó lưu lại địa chỉ ô nhớ & thao tác với dữ liệu dựa trên địa chỉ đó. Điều này giúp tiết kiệm bộ nhớ cho các ứng dụng. 
+	+ Những kiểu dữ liệu nguyên thủy: khi được khởi tạo sẽ được cấp phát một ô nhớ nhất định không liên quan đến nhau. Do đó :
+		let name = "estacks";
+		let name2 = name; // estacks
+		name = "estacks.icu";
+		console.log(name); // estacks.icu
+		console.log(name2); //estacks
+	--> Vì name và name2 là thuộc 2 ô nhớ khác nhau.
+	+ Object và Array : (Khác kiểu dữ liệu nguyên thủy)
+		const arr1 = ['e', 's', 't', 'a', 'c', 'k', 's'];
+		const arr2 = arr1;
+		arr1[0] = 'a';
+		console.log(arr2); // ['a, 's', 't', 'a', 'c', 'k', 's']
+	--> Thay vì tạo ra 2 vùng nhớ riêng cho arr1 và arr2 thì nó lại cho arr2 trỏ đến địa chỉ của arr1. Dẫn đến bất cứ khi nào arr1 thay đổi thì arr2 cũng thay đổi theo. 

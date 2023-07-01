@@ -68,3 +68,14 @@ function demo(...params){
     console.log(params);
 }
 demo(1,2,3,4,5); // [1,2,3,4,5]
+
+// Spread operator --> Given array or object, just like we remove [ and ]
+
+var a1 = [1,2,3];
+var a2 = [4,5,6]; 
+var a3 = [...a1, ...a2]; // [1,2,3,4,5,6];
+// --> same with object
+function logger(a, b, c){
+    console.log(a, b, c);
+}
+logger(...a1); // 1,2,3 
