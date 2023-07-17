@@ -79,3 +79,8 @@ function logger(a, b, c){
     console.log(a, b, c);
 }
 logger(...a1); // 1,2,3 
+
+
+let str = "We will, we will rock you";
+
+console.log( str.match(/we/i) );
