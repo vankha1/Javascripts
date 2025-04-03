@@ -1,21 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    
-</head>
-<body>
-    <h1>Green Planet</h1>
-    <p id="greenplanet">All is well</p>
-    <h1>Red Planet</h1>
-    <p id="redplanet">Nothing to report</p>
-    <h1>Blue Planet</h1>
-    <p id="blueplanet">All systems A-OK</p>
-    <script src="test.js">
+    <link rel="stylesheet" href="" />
+    <link rel="stylesheet" href="" />
+    <style>
+      .text span {
+        color: red;
+      }
+      h1 span {
+        color: black;
+      }
+      p span {
+        color: yellow;
+      }
+      div.text {
+        color: blue !important;
+      }
+      span.text {
+        color: green;
+      }
+      h1 > span {
+        color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <main id="main">
+      <h1 id="h1">
+        <span class="text" name="span"> Môn học Lập trình web </span>
         
+        <b>Vankha</b>&nbsp;<b>asdfasd</b>
+
+        <b>Vankha</b>&nbsp;<b>asdfasd</b>
+        <div>
+          <p>
+          </p>
+        </div>
+      </h1>
+
+      <form action="" onsubmit="">
+        <textarea name="" id="1"></textarea>
+        <input type="submit">
+      </form>
+    </main>
+    <script type="module" src="test.js">
+
     </script>
-</body>
+  </body>
 </html>
